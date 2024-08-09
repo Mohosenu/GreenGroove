@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <link rel="stylesheet" href="order-summary.css"> <!-- Link to any CSS file you use for styling -->
+</head>
+<body>
+    <!-- Navigation Section -->
+    <nav id="Home">
+        <div class="logo">
+            <h1 class="h1_1">GreenGrove<span class="span_1"> Grocery</span></h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="dropdown">
+                <a href="veg.html" class="dropbtn">vegetables & Fruits</a>
+                <div class="dropdown-content">
+                    <a href="veg.html">Vegetables</a>
+                    <a href="fruits.html">Fruits</a>
+    
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="meat.html" class="dropbtn">Meat & Seafood</a>
+                <div class="dropdown-content">
+                    <a href="meat.html">Meat Products</a>
+                    <a href="seafood.html">Seafood Products</a>
+                </div>
+            </li>
+            
+            <li><a href="baking.html">Baking & Cooking Ingredients</a></li>
+            <li><a href="dairy.html">Dairy Products</a></li>
+            <li><a href="skincare.html">Skin Care</a></li>
+        </ul>
+        <div class="icon">
+            <a href="login.html"><img src="user.png" alt="User Icon"></a>
+            <a href="check.html"><img src="cart.png" alt="Cart Icon"></a>
+        </div>
+    </nav>
+  
+    <div id="order-summary-container">
+        <h1><b><center>Order Summary</center></b></h1>
+        <!-- Order summary table will be populated here -->
+        <div id="summary-table-container"></div>
+    </div>
+    
+    <!-- Personal Details Form -->
+    <form id="personal-details-form">
+        <h2>Personal Details</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="zipcode">Zipcode:</label>
+        <input type="text" id="zipcode" name="zipcode" required>
+    </form>
+
+    <!-- Payment Form -->
+    <div class="form-container">
+        <form id="payment-form">
+            <h2>Payment Details</h2>
+            
+            <!-- Payment Method -->
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment-method">
+                <option value="paypal">PayPal</option>
+                <option value="credit-debit">Credit/Debit Card</option>
+            </select>
+
+            <!-- Card Details (Initially hidden) -->
+            <div id="card-details" class="hidden">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" maxlength="19" placeholder="1234 5678 9000">
+
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="text" id="expiry-date" name="expiry-date" maxlength="5" placeholder="MM/YY">
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" maxlength="3" placeholder="123">
+            </div>
+
+            <!-- Confirm Button -->
+            <button type="submit" id="confirm-button">Confirm</button>
+        </form>
+    </div>
+
+
+
+    <script src="order.js"></script>
+
+    <!-- Footer Section -->
+    <footer id="footer1">
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>Fresh, local produce, sustainable farming, quality, freshness, community-focused groceries.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="skincare.html">Skin Care</a></li>
+                <li><a href="veg.html">Vegetable Products</a></li>
+                <li><a href="dairy.html">Dairy Products</a></li>
+                <li><a href="meat.html">Meat Products</a></li>
+                <li><a href="baking.html">Baking Products</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/EBPTqc3CjgzNYZVe/?mibextid=LQQJ4d"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="https://x.com/GroceryDive/status/1782840731415019677"><img src="twitter.png" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/greengrooveshop?igsh=YWNyMHV1NTNoNTMw"><img src="insta.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Newsletter</h3>
+            <form action="#">
+                <input type="email" name="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+    </body>

@@ -1,0 +1,453 @@
+/* Navigation bar styling */
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    left: 0; 
+    background: white; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
+    padding: 10px 40px; /* Reduced the top and bottom padding */
+    transition: background 0.3s ease-in-out; 
+}
+
+/* Styling for the logo inside the navigation bar */
+nav .logo img {
+    width: 70px; 
+    cursor: pointer; 
+    padding: 5px; 
+    transition: transform 0.3s ease; 
+}
+
+/* Hover effect for the logo */
+nav .logo img:hover {
+    transform: scale(1.1); 
+}
+
+/* Styling for the navigation list */
+nav ul {
+    list-style: none; 
+    display: flex; 
+    margin: 0; 
+    padding: 0; 
+}
+
+/* Styling for individual navigation list items */
+nav ul li {
+    margin: 0 25px; 
+}
+
+/* Styling for links inside navigation list items */
+nav ul li a {
+    text-decoration: none; 
+    color: #222; 
+    font-weight: 600; 
+    font-size: 18px; 
+    transition: color 0.3s ease-in-out; 
+    position: relative; 
+}
+
+/* Styling for the underline effect on hover */
+nav ul li a::after {
+    content: ''; 
+    width: 0; 
+    height: 2px; 
+    background: #3EB489; 
+    display: block; 
+    position: absolute; 
+    left: 0; 
+    bottom: -5px; 
+    transition: width 0.3s ease; 
+}
+
+/* Hover effect for the underline */
+nav ul li a:hover::after {
+    width: 100%; 
+}
+
+nav ul li a:hover {
+    color: #3EB489; 
+}
+
+nav .icon {
+    display: flex; 
+    align-items: center; 
+}
+
+nav .icon i {
+    font-size: 22px; 
+    color: #222; 
+    margin-left: 20px; 
+    cursor: pointer; 
+    transition: color 0.3s ease-in-out; 
+}
+
+nav .icon i:hover {
+    color: #3EB489; 
+}
+
+/* Styling for images inside the icon section */
+nav .icon a img {
+    width: 40px; 
+    margin-left: 15px; 
+    transition: transform 0.3s ease; 
+}
+
+/* Hover effect for images inside the icon section */
+nav .icon a img:hover {
+    transform: scale(1.1); 
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 60px 0 0 0; /* Adjusted padding to account for the fixed navigation bar */
+    background-color: #f4f4f4;
+}
+
+#order-summary-container {
+    max-width: 900px;
+    margin: 60px auto 20px; /* Added top margin to move the order summary down */
+    padding: 20px;
+    background-color: #a2b795;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #000000;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+form {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #659695;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+input[type="date"], input[type="email"], input[type="tel"] {
+    width: calc(100% - 22px);
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#summary-table-container {
+    margin-bottom: 20px;
+}
+
+/* Footer Section */
+#footer1 {
+    display: flex;
+    flex-wrap: wrap; /* Allows footer sections to stack on smaller screens */
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+}
+
+.footer-section {
+    flex: 1; /* Allows each section to grow equally */
+    text-align: center;
+    margin: 10px;
+    min-width: 200px; /* Ensures sections don't get too narrow */
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: calc(100% - 120px);
+    max-width: 300px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3EB489;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2b8c65;
+}
+
+
+
+
+/* Media Queries for Smaller Screens */
+
+/* Universal adjustments for smaller screens */
+@media (max-width: 768px) {
+
+
+    body {
+        padding: 80px 0 0 0; /* Adjust padding to account for fixed nav bar */
+    }
+
+    #order-summary-container {
+        margin: 80px auto 20px;
+        padding: 20px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input, select {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    #footer1 {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+        min-width: 100%;
+    }
+
+    input[type="email"] {
+        width: calc(100% - 60px);
+        max-width: 250px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 5px 10px;
+    }
+
+    nav .logo img {
+        width: 40px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    body {
+        padding: 60px 0 0 0; /* Adjust padding to account for fixed nav bar */
+    }
+
+    #order-summary-container {
+        margin: 60px auto 20px;
+        padding: 15px;
+    }
+
+    table, th, td {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    input, select {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    #footer1 {
+        padding: 15px;
+    }
+
+    .footer-section {
+        margin: 5px 0;
+        min-width: 100%;
+    }
+
+    input[type="email"] {
+        width: calc(100% - 40px);
+        max-width: 200px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+

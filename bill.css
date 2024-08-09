@@ -1,0 +1,702 @@
+/* Navigation bar styling */
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    left: 0; 
+    background: white; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
+    padding: 5px 20px; /* Reduced the top and bottom padding */
+    transition: background 0.3s ease-in-out; 
+}
+
+/* Styling for the logo inside the navigation bar */
+nav .logo img {
+    width: 70px; 
+    cursor: pointer; 
+    padding: 5px; 
+    transition: transform 0.3s ease; 
+}
+
+/* Hover effect for the logo */
+nav .logo img:hover {
+    transform: scale(1.1); 
+}
+
+/* Styling for the navigation list */
+nav ul {
+    list-style: none; 
+    display: flex; 
+    margin: 0; 
+    padding: 0; 
+}
+
+/* Styling for individual navigation list items */
+nav ul li {
+    margin: 0 25px; 
+}
+
+/* Styling for links inside navigation list items */
+nav ul li a {
+    text-decoration: none; 
+    color: #222; 
+    font-weight: 600; 
+    font-size: 18px; 
+    transition: color 0.3s ease-in-out; 
+    position: relative; 
+}
+
+/* Styling for the underline effect on hover */
+nav ul li a::after {
+    content: ''; 
+    width: 0; 
+    height: 2px; 
+    background: #3EB489; 
+    display: block; 
+    position: absolute; 
+    left: 0; 
+    bottom: -5px; 
+    transition: width 0.3s ease; 
+}
+
+/* Hover effect for the underline */
+nav ul li a:hover::after {
+    width: 100%; 
+}
+
+nav ul li a:hover {
+    color: #3EB489; 
+}
+
+nav .icon {
+    display: flex; 
+    align-items: center; 
+}
+
+nav .icon i {
+    font-size: 22px; 
+    color: #222; 
+    margin-left: 20px; 
+    cursor: pointer; 
+    transition: color 0.3s ease-in-out; 
+}
+
+nav .icon i:hover {
+    color: #3EB489; 
+}
+
+/* Styling for images inside the icon section */
+nav .icon a img {
+    width: 40px; 
+    margin-left: 15px; 
+    transition: transform 0.3s ease; 
+}
+
+/* Hover effect for images inside the icon section */
+nav .icon a img:hover {
+    transform: scale(1.1); 
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.product-table, .bill-table, .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.product-table th, .product-table td, .bill-table th, .bill-table td, .cart-table th, .cart-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.product-table th, .bill-table th, .cart-table th {
+    background-color: #147c48;
+    color: white;
+    font-weight: bold;
+}
+
+.product-table tbody tr:nth-child(even), .bill-table tbody tr:nth-child(even), .cart-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.product-table tbody tr:hover, .bill-table tbody tr:hover, .cart-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Cart table styles */
+.cart-table th, .cart-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.cart-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.cart-table td {
+    background-color: #f9f9f9;
+}
+
+/* Cart summary */
+#cart-summary {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 18px;
+}
+
+/* Checkout button styles */
+#checkout-button {
+    margin-top: 15px;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#checkout-button:hover {
+    background-color: #45a049;
+}
+
+/* Cart buttons */
+#update-cart-button, #clear-cart-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #147c48;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#update-cart-button:hover, #clear-cart-button:hover {
+    background-color: #0f6f3f;
+}
+
+#favorites-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.favorites-page h2 {
+    margin-top: 95px;
+    text-align: center;
+    font-size: 45px;
+}
+
+.favorites-page .apply-bill-button,
+.delete-bill-button {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    width: fit-content;
+}
+
+.favorites-page .apply-bill-button,
+.delete-bill-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+.favorites-page .apply-bill-button:hover,
+.delete-bill-button:hover {
+    background-color: #45a049;
+}
+
+.bill-container {
+    margin-bottom: 40px;
+}
+
+#bill-container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+#bill-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#bill-table th, #bill-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#bill-table th {
+    background-color: #f4f4f4;
+}
+
+.favorite-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.favorite-card h3 {
+    margin: 0;
+}
+
+#favorites-container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+#proceed-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#proceed-button:hover {
+    background-color: #45a049;
+}
+
+#save-to-favorites-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#save-to-favorites-button {
+    background-color: #45a049;
+}
+
+
+#select-from-favorites-button {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 10px 2px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+
+#select-from-favorites-button {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Footer Section */
+#footer1 {
+    display: flex;
+    flex-wrap: wrap; /* Allows footer sections to stack on smaller screens */
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+}
+
+.footer-section {
+    flex: 1; /* Allows each section to grow equally */
+    text-align: center;
+    margin: 10px;
+    min-width: 200px; /* Ensures sections don't get too narrow */
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: calc(100% - 120px);
+    max-width: 300px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3EB489;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2b8c65;
+}
+
+/* Styles for action buttons in cart items to fine-tune spacing */
+.action-button-container button {
+    margin-right: 4px; 
+}
+
+.action-button-container button:last-child {
+    margin-right: 0; 
+}
+
+/* Ensuring buttons are neatly aligned and have a slight space between them */
+.action-button-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: start; 
+}
+
+/* Media Queries for Smaller Screens */
+
+@media (max-width: 768px) {
+    
+
+
+    h1 {
+        font-size: 1.5em;
+        margin-top: 60px;
+    }
+
+    .product-table, .bill-table, .cart-table {
+        font-size: 14px;
+    }
+
+    .product-table th, .product-table td, .bill-table th, .bill-table td, .cart-table th, .cart-table td {
+        padding: 8px;
+
+    }
+
+    .product-table th, .bill-table th, .cart-table th {
+        font-size: 16px;
+    }
+
+    .cart-table th, .cart-table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    #cart-summary {
+        font-size: 16px;
+    }
+
+    #checkout-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    #update-cart-button, #clear-cart-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    #favorites-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+
+    .favorites-page h2 {
+        font-size: 36px;
+        margin-top: 70px;
+    }
+
+    .apply-bill-button, .delete-bill-button {
+        margin-bottom: 8px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .bill-container {
+        margin-bottom: 30px;
+    }
+
+    #proceed-button, #save-to-favorites-button, #select-from-favorites-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    #footer1 {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .footer-section {
+        margin: 5px 0;
+        min-width: 100%;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 10px;
+    }
+
+    input[type="email"] {
+        width: calc(100% - 60px);
+        max-width: 250px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .action-button-container button {
+        margin-right: 3px;
+    }
+
+    .action-button-container button:last-child {
+        margin-right: 0;
+    }
+
+    .action-button-container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 5px 10px;
+    }
+
+    nav .logo img {
+        width: 40px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    h1 {
+        font-size: 1.2em;
+        margin-top: 50px;
+    }
+
+    .product-table, .bill-table, .cart-table {
+        font-size: 12px;
+    }
+
+    .product-table th, .product-table td, .bill-table th, .bill-table td, .cart-table th, .cart-table td {
+        padding: 6px;
+    }
+
+    .product-table th, .bill-table th, .cart-table th {
+        font-size: 14px;
+    }
+
+    .cart-table th, .cart-table td {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    #cart-summary {
+        font-size: 14px;
+    }
+
+    #checkout-button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    #update-cart-button, #clear-cart-button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    #favorites-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    table th, table td {
+        padding: 6px;
+    }
+
+    .favorites-page h2 {
+        font-size: 28px;
+        margin-top: 50px;
+    }
+
+    .apply-bill-button, .delete-bill-button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .bill-container {
+        margin-bottom: 20px;
+    }
+
+    #proceed-button, #save-to-favorites-button, #select-from-favorites-button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    #footer1 {
+        padding: 15px;
+    }
+
+    .footer-section {
+        margin: 5px 0;
+        min-width: 100%;
+    }
+
+    input[type="email"] {
+        width: calc(100% - 40px);
+        max-width: 200px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .action-button-container button {
+        margin-right: 2px;
+    }
+
+    .action-button-container button:last-child {
+        margin-right: 0;
+    }
+
+    .action-button-container {
+        justify-content: center;
+    }
+}

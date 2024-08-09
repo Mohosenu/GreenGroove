@@ -1,0 +1,23 @@
+{
+    "name": "GreenGrove Grocery",
+    "short_name": "GreenGrove",
+    "description": "Discover farm-fresh produce, premium staples, and delightful treats with easy navigation, secure payments, and fast delivery at GreenGrove Grocery in Sri Lanka.",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#4CAF50",
+    "icons": [
+        {
+            "src": "icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "scope": "/",
+    "orientation": "portrait-primary"
+}

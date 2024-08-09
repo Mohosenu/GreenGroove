@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Tables</title>
+    <link rel="stylesheet" href="bill.css">
+</head>
+<body>
+    
+<!-- Navigation Section -->
+<nav id="Home">
+    <div class="logo">
+        <h1 class="h1_1">GreenGrove<span class="span_1"> Grocery</span></h1>
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="dropdown">
+            <a href="veg.html" class="dropbtn">vegetables & Fruits</a>
+            <div class="dropdown-content">
+                <a href="veg.html">Vegetables</a>
+                <a href="fruits.html">Fruits</a>
+
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="meat.html" class="dropbtn">Meat & Seafood</a>
+            <div class="dropdown-content">
+                <a href="meat.html">Meat Products</a>
+                <a href="seafood.html">Seafood Products</a>
+            </div>
+        </li>
+        
+        <li><a href="baking.html">Baking & Cooking Ingredients</a></li>
+        <li><a href="dairy.html">Dairy Products</a></li>
+        <li><a href="skincare.html">Skin Care</a></li>
+    </ul>
+    <div class="icon">
+        <a href="login.html"><img src="user.png" alt="User Icon"></a>
+        <a href="check.html"><img src="cart.png" alt="Cart Icon"></a>
+    </div>
+</nav>
+
+    <h1>Product Categories</h1>
+
+    <!-- Vegetables Table -->
+    <h2>Vegetables</h2>
+    <table class="product-table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Price (LKR)</th>
+                <th>Add to Bill</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Carrot</td>
+                <td>500.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Carrot" data-price="500">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Bell Pepper</td>
+                <td>800.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Bell Pepper" data-price="800">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Brocoli</td>
+                <td>850.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Brocoli" data-price="850">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Cauliflower</td>
+                <td>300.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Cauliflower" data-price="300">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Tomato</td>
+                <td>450.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Tomato" data-price="450">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Spinach</td>
+                <td>400.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Spinach" data-price="400">Add to Bill</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Fruits Table -->
+    <h2>Fruits</h2>
+    <table class="product-table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Price (LKR)</th>
+                <th>Add to Bill</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Apple</td>
+                <td>600.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Apple" data-price="600">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>300.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Banana" data-price="300">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Watermelon</td>
+                <td>250.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Watermelon" data-price="250">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Orange</td>
+                <td>700.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Orange" data-price="700">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Grapes</td>
+                <td>650.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Grapes" data-price="650">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Strawberry</td>
+                <td>2000.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Strawberry" data-price="2000">Add to Bill</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Dairy Produce Table -->
+    <h2>Dairy Produce</h2>
+    <table class="product-table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Price (LKR)</th>
+                <th>Add to Bill</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Butter</td>
+                <td>1000.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Butter" data-price="1000">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Cheddar Cheese</td>
+                <td>2000.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Cheese" data-price="2000">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Egg</td>
+                <td>500.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Egg" data-price="500">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Fresh Milk</td>
+                <td>450.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Fresh Milk" data-price="450">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Ice Cream</td>
+                <td>800.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Ice Cream" data-price="800">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Yogurt</td>
+                <td>80.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Yogurt" data-price="80">Add to Bill</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Meat Table -->
+    <h2>Meat Items</h2>
+    <table class="product-table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Price (LKR)</th>
+                <th>Add to Bill</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Chicken</td>
+                <td>1200.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Chicken" data-price="1200">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Chicken Wings</td>
+                <td>300.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Chicken Wings" data-price="300">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Lamb</td>
+                <td>2500.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Lamb" data-price="2500">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Pork</td>
+                <td>1600.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Pork" data-price="1600">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Beef</td>
+                <td>2000.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Beef" data-price="2000">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Bacon</td>
+                <td>2100.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Bacon" data-price="2100">Add to Bill</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+        <!-- SeaFood Table -->
+        <h2>SeaFood Items</h2>
+        <table class="product-table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price (LKR)</th>
+                    <th>Add to Bill</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Prawns</td>
+                    <td>2000.00</td>
+                    <td><button class="add-to-bill-button" data-product-name="Prawns" data-price="2000">Add to Bill</button></td>
+                </tr>
+                <tr>
+                    <td>Fish</td>
+                    <td>1000.00</td>
+                    <td><button class="add-to-bill-button" data-product-name="Fish" data-price="1000">Add to Bill</button></td>
+                </tr>
+                <tr>
+                    <td>Cutlfish</td>
+                    <td>1500.00</td>
+                    <td><button class="add-to-bill-button" data-product-name="Cutlfish" data-price="1500">Add to Bill</button></td>
+                </tr>
+                <tr>
+                    <td>Crabs</td>
+                    <td>2500.00</td>
+                    <td><button class="add-to-bill-button" data-product-name="Crabs" data-price="2500">Add to Bill</button></td>
+                </tr>
+                <tr>
+                    <td>Salmon</td>
+                    <td>1800.00</td>
+                    <td><button class="add-to-bill-button" data-product-name="Salmon" data-price="1800">Add to Bill</button></td>
+                </tr>
+                <tr>
+                    <td>Oyster</td>
+                    <td>3000.00</td>
+                    <td><button class="add-to-bill-button" data-product-name="Oyster" data-price="3000">Add to Bill</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    <!-- Baking & Cooking Ingredients Table -->
+    <h2>Baking & Cooking Ingredients</h2>
+    <table class="product-table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Price (LKR)</th>
+                <th>Add to Bill</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Turmeric</td>
+                <td>200.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Turmeric" data-price="200">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Oil</td>
+                <td>600.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Oil" data-price="600">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Rice</td>
+                <td>1300.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Rice" data-price="1300">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Flour</td>
+                <td>250.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Flour" data-price="250">Add to Bill</button></td>
+            </tr>
+        </tr>
+        <tr>
+            <td>Baking Powder</td>
+            <td>150.00</td>
+            <td><button class="add-to-bill-button" data-product-name="Baking Powder" data-price="150">Add to Bill</button></td>
+        </tr>
+        <tr>
+            <td>Sugur</td>
+            <td>280.00</td>
+            <td><button class="add-to-bill-button" data-product-name="Sugur" data-price="280">Add to Bill</button></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- SkinCare Table -->
+    <h2>SkinCare</h2>
+    <table class="product-table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Price (LKR)</th>
+                <th>Add to Bill</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sunscreen</td>
+                <td>5500.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Sunscreen" data-price="5500">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Cleanser</td>
+                <td>2500.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Cleanser" data-price="2500">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td> Oil-free moisturizer</td>
+                <td>3000.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Oil-free moisturizer" data-price="3000">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Anti-aging-moisturize</td>
+                <td>2900.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Anti-aging-moisturizer" data-price="2900">Add to Bill</button></td>
+            </tr>
+            <tr>
+                <td>Ordinary Serum</td>
+                <td>4500.00</td>
+                <td><button class="add-to-bill-button" data-product-name="Ordinary Serum" data-price="4500">Add to Bill</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <h1>Checkout</h1>
+    <div id="bill-container">
+        <table id="bill-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="bill-table-body">
+                <!-- Bill items will be populated here -->
+            </tbody>
+        </table>
+        <p id="total-amount">Total: $0.00</p>
+        <button id="save-to-favorites-button">Save to Favorites</button>
+        <button id="select-from-favorites-button">Select from Favorites</button>
+        <button id="proceed-button">Proceed</button><!-- Added Proceed Button -->
+    </div>
+    <script src="main.js"></script>
+
+    <!-- Footer Section -->
+<footer id="footer1">
+    <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Fresh, local produce, sustainable farming, quality, freshness, community-focused groceries.</p>
+    </div>
+    <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="skincare.html">Skin Care</a></li>
+            <li><a href="veg.html">Vegetable Products</a></li>
+            <li><a href="dairy.html">Dairy Products</a></li>
+            <li><a href="meat.html">Meat Products</a></li>
+            <li><a href="baking.html">Baking Products</a></li>
+        </ul>
+    </div>
+    <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/EBPTqc3CjgzNYZVe/?mibextid=LQQJ4d"><img src="facebook.png" alt="Facebook"></a>
+                <a href="https://x.com/GroceryDive/status/1782840731415019677"><img src="twitter.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/greengrooveshop?igsh=YWNyMHV1NTNoNTMw"><img src="insta.png" alt="Instagram"></a>
+        </div>
+    </div>
+    <div class="footer-section">
+        <h3>Newsletter</h3>
+        <form action="#">
+            <input type="email" name="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</footer>
+</body>
+</html>
+
+
